@@ -14,6 +14,21 @@
   font-optical-sizing: auto;}
 
 
+/* shared style */
+
+.titel{
+color: #FFFFFF;
+font-size: 3rem;
+font-weight: 700;
+text-align:center ;
+
+
+
+
+
+
+}
+
 .white-text-color{
   color: #FFFFFF;
   font-size: 1rem;
@@ -37,8 +52,10 @@
 }
 
 
-
-
+main{
+  background-color: rgba(26, 11, 46, 1);
+}
+/* navbar style */
 .navbar{ border-bottom: 1px solid red;
   background-color: #1A0B2E;
   padding: 24px 200px;
@@ -190,12 +207,75 @@ font-weight: 400;
 gap: 8px;
 }
 .transparent-btn img{
- 
  width: 100%;
+}
+
+/* About Section */
+
+.About-Section{
+  /* background-color: rgba(26, 11, 46, 1); */
+  text-align: center;
+  padding: 0 200px;
  
   
+}
+
+.About{
+
+  max-width: 1200 px;
+  margin:  0 auto;
+  /* border: 1px solid red; */
+  
+  
+}
+.about-description {
+  font-weight: 400;
+  
+  opacity: 80%;
+  line-height: 28px;
 
 }
+.about-sub{
+  margin-top: 25px;
+}
+
+.About hr{
+  margin-top: 80px;
+  border-color: rgba(255, 255, 255, 1);
+  opacity: 10%;
+}
+.About-card-container{
+ max-width: 1200px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 80px;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+.About-card{
+  /* width: 240px;
+  height: 94px; */
+border-color: 1px solid green;
+}
+.About-card h2{
+  color: #00FF88;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.About-card p{
+  font-weight: 400;
+  color: #FFFFFF;
+
+  opacity: 80%;
+  
+}
+
+
+
 
 
 
@@ -216,7 +296,7 @@ gap: 8px;
 }
 
 
-.banner-container{
+.banner-container {
 
   padding-top: 40px ;
   margin: 0 auto;
@@ -252,6 +332,47 @@ gap: 8px;
   right: -6px;
   
 }
+.hero-text-container h2 {
+  margin-top: 24px;
+font-size: 2.5rem;
+
+}
+/* About Section */
+.About-Section{
+
+  padding:  40px 20px;
+}
+
+.about-description br{
+  display: none;
+
+}
+.About h2, .About-card h2{
+  font-size: 2rem;
+
+}
+.About-card-container{
+
+  
+  margin-top: 40px;
+  /* border: 1px solid red; */
+  
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px ;
+ 
+}
+.About-card h2{
+font-size: 2.5rem;
+}
+.About hr{
+  margin-top: 40px;
+  
+}
+
+
+
+
+
 
 
 
