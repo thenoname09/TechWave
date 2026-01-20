@@ -34,6 +34,7 @@ text-align:center ;
 font-size: 1rem;
 font-weight: 400;
 opacity: 60%;
+line-height: 24px;
 }
 
 
@@ -316,7 +317,11 @@ border-color: 1px solid green;
 
 .Premium{
   grid-row: span 2;
-  padding: 107.5px 40px ;
+  padding: 107.5px 40px 20px ;
+ 
+  
+  
+
  
 }
 .Mobile, .Global, .Exclusive{
@@ -332,6 +337,87 @@ border-color: 1px solid green;
   margin-bottom: 16px;
 
 }
+
+/* Featured Episodes Section */
+.Featured-Section{
+  padding: 120px 200px ;
+  margin: 0 auto;
+}
+
+.Featured-card{
+  /* max-width: 1200px; */
+
+  margin: 40px  auto 120px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.video-card{
+ /* border: 1px solid red; */
+ width: 380px;
+ border-radius: 24px;
+ background-color: #250D44;
+}
+.video-text{
+  padding: 24px;
+}
+iframe{
+  border-radius: 24px 24px 0 0px;
+}
+.video-text p{
+  margin-top:12px ;
+  margin-bottom: 12px;
+}
+.time{
+  gap: 6px;
+  justify-content: start;
+  align-items: center;
+  color: #00FF88;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.the-host{
+  justify-content: center;
+  border-radius: 40px;
+  margin: 0 auto ;
+  margin-top: 40px;
+  padding: 40px;
+  gap: 24px;
+  background-color: rgba(53, 17, 101, 0.4);
+}
+.host-text h3{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.social-icon{
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+ 
+  
+}
+.icon{
+   border: 1px solid #533C72; 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  
+  margin-top: 16px; 
+  padding:10px;
+}
+
+.icon img{
+ 
+  width: 100%;
+  
+}
+
+
 
 
 
@@ -478,8 +564,80 @@ font-size: 2.5rem;
 }
 
 
+/* <!-- Featured Episodes Section --> */
 
+.Featured-Section{
+  padding: 40px 20px ;
+  margin: 0 auto;
 }
+
+.Featured-card{
+  margin: 24px  auto 60px;
+  gap: 16px;
+  flex-direction: column;
+}
+.video-text{
+  padding: 16px;
+}
+
+/* Meet the Host */
+
+.the-host{
+  
+  border-radius: 24px;
+  margin: 0 auto ;
+  margin-top: 40px;
+  padding: 24px;
+ 
+  gap: 16px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.the-host img{
+  width: 150px;
+  
+}
+.social-icon{
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* @media screen and (min-width:576px) and (max-width:992px) */
