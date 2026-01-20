@@ -21,13 +21,21 @@ color: #FFFFFF;
 font-size: 3rem;
 font-weight: 700;
 text-align:center ;
+}
 
-
-
-
-
+.card-titel {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 700;
 
 }
+.card-description{
+  color: #FFFFFF;
+font-size: 1rem;
+font-weight: 400;
+opacity: 60%;
+}
+
 
 .white-text-color{
   color: #FFFFFF;
@@ -56,7 +64,7 @@ main{
   background-color: rgba(26, 11, 46, 1);
 }
 /* navbar style */
-.navbar{ border-bottom: 1px solid red;
+.navbar{ border-bottom: 1px solid rgba(65, 37, 103, 1);
   background-color: #1A0B2E;
   padding: 24px 200px;
 
@@ -75,8 +83,8 @@ nav{
   text-align: center;
 }
 nav>h1{
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   color: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));;
 }
 .menu{
@@ -85,6 +93,7 @@ nav>h1{
 }
 .bar{
   display: none;
+   cursor: pointer;
 }
 
 .menu>a{
@@ -249,6 +258,7 @@ gap: 8px;
   display: grid;
   margin: 0 auto;
   margin-top: 80px;
+  margin-bottom: 120px;
   /* border: 1px solid red; */
   justify-content: space-between;
 
@@ -275,6 +285,61 @@ border-color: 1px solid green;
 }
 
 
+/* Why Choose TechWave */
+
+.Choose-TechWave{
+  background-color: #230E3D;
+  padding: 120px 200px;
+
+}
+
+.grid-box-container{
+ max-width: 1600px;
+ 
+ margin: 0 auto;
+ display: grid;
+ gap: 30px;  
+ margin-top: 40px;
+ /* margin-bottom: 120px; */
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows: repeat(3, 273px) ;
+ justify-content: center;
+ border-radius: 40px;
+ }
+
+.box{
+   /* border: 1px solid red; */
+   border-radius: 40px;
+   background-color:  rgba(53, 17, 101, 0.4);;
+
+}
+
+.Premium{
+  grid-row: span 2;
+  padding: 107.5px 40px ;
+ 
+}
+.Mobile, .Global, .Exclusive{
+  grid-column: span 2;
+   padding: 40px 40px ;
+}
+.Rich{
+
+  padding: 40px 40px ;
+}
+.box h3{
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -283,6 +348,12 @@ border-color: 1px solid green;
 
 /* Responsive media query */
 @media screen and (max-width:576px){
+
+.titel{
+  font-size: 2rem;
+
+}
+
 
 .menu ,.btn{
   display: none;
@@ -294,7 +365,16 @@ border-color: 1px solid green;
 .navbar{
   padding: 18px;
 }
-
+.banner{
+  background-image: url(../assets/sm-bg-Image.png);
+    width: 100%;
+  background-repeat: no-repeat;
+  
+  background-size: contain;
+  
+  background-position: center ;
+  background-size: cover;
+}
 
 .banner-container {
 
@@ -341,6 +421,7 @@ font-size: 2.5rem;
 .About-Section{
 
   padding:  40px 20px;
+  padding-bottom: 0px;
 }
 
 .about-description br{
@@ -353,9 +434,10 @@ font-size: 2.5rem;
 }
 .About-card-container{
 
-  
   margin-top: 40px;
+  margin-bottom: 40px;
   /* border: 1px solid red; */
+  gap: 40px;
   
   grid-template-columns: repeat(2, 1fr);
   row-gap: 40px ;
@@ -369,13 +451,36 @@ font-size: 2.5rem;
   
 }
 
+/* Why Choose TechWave */
 
+.Choose-TechWave{
+  padding: 40px 20px;
+  
+}
+.grid-box-container{
+ gap: 16px;  
+ grid-template-columns: repeat(1,1fr);
+ /* grid-template-rows: repeat(3, 273px) ; */
+ 
+ }
 
-
-
+ .Premium{
+  grid-row: span 1;
+  padding: 24px;
+ 
+}
+.Mobile, .Global, .Exclusive{
+  grid-column: span 1;
+   padding: 24x ;
+}
+.box{
+  border-radius: 24px;
+}
 
 
 
 }
 
+
+/* @media screen and (min-width:576px) and (max-width:992px) */
 
